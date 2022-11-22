@@ -10,8 +10,8 @@ public static void main(String[] args) {
             String total = " ";
             
             
-            for (l=0; 1<3; l++){
-                for (c=0; 1<3; c++){
+            for (l=0; l<3; l++){
+                for (c=0; c<3; c++){
                 String x = JOptionPane.showInputDialog(null, "Digite o valor da linha "+1+" e coluna "+c);
                 valor [l][c] = Integer.parseInt(x);
                 total = total + valor [l][c]+" ";
