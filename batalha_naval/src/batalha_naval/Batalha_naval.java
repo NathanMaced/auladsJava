@@ -26,7 +26,7 @@ import javax.swing.JOptionPane;
         
         valor [l][c] = 0;
         for (l=0; l<1; l++){
-            for(c=0; c<1; c++){
+            
                 String x = JOptionPane.showInputDialog(null, "Digite a linha ");
                 l = Integer.parseInt(x);
                 String xx = JOptionPane.showInputDialog(null, "Digite a coluna ");
@@ -35,9 +35,9 @@ import javax.swing.JOptionPane;
             if ( tab [l][c] == 1){
                 valor [l][c] = 1;
             }
-            total = total + valor [l][c] + " ";
-            }
-            total = valor + "\n";
+            //total = total + valor [l][c] + " ";
+            
+            //total = valor + "\n";
         }
 
 JOptionPane.showMessageDialog(null, total);
