@@ -1,21 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package batalha_naval;
 
-/**
- *
- * @author manager
- */
-public class Batalha_naval {
+import javax.swing.JOptionPane;
 
-    /**
-     * @param args the command line arguments
-     */
+    public class Batalha_naval {
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        int [][] valor = new int [5][5];
+        String [][] resul = new String[5][5];
+        int l = 0,c = 0;
+        String total = " ";
+        
+        valor [l][c] = 0;
+        for (l=0; l<5; l++){
+            for(c=0; c<5; c++){
+            total = total + valor [l][c] + " ";
+            }
+            total = total + "\n";
+        }
+JOptionPane.showMessageDialog(null, total);
     }
-    
-}
+    }
